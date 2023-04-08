@@ -1,3 +1,9 @@
+/**
+ * Count X operation duration. Just wrap your operation in function and provide it as callback.
+ * @param {Function} callback - callback function, this is your operation
+ * @param args - contain arguments, which necessary for callback function
+ * @returns {Number} - this numbers represents how many ms takes your operation
+ */
 function countDuration(callback, ...args) {
   const start = Date.now();
   callback(...args);
